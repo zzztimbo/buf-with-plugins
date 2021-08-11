@@ -7,4 +7,7 @@ RUN BIN="/usr/local/bin" && \
     -o "${BIN}/${BINARY_NAME}" && \
     chmod +x "${BIN}/${BINARY_NAME}"
 
+RUN apt-get update && apt-get install -y \
+    git-all
+
 ENTRYPOINT ["/usr/local/bin/buf"]
