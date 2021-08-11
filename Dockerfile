@@ -8,6 +8,7 @@ RUN BIN="/usr/local/bin" && \
     chmod +x "${BIN}/${BINARY_NAME}"
 
 RUN apt-get update && apt-get install -y \
-    git-all
+    git-all \
+    tree
 
 ENTRYPOINT ["/usr/local/bin/buf"]
