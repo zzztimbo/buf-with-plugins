@@ -10,3 +10,5 @@ RUN BIN="/usr/local/bin" && \
 RUN apt-get update && apt-get install -y \
     git-all \
     tree
+
+ENTRYPOINT []
